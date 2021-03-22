@@ -1,7 +1,7 @@
 # EmailBlaster
 Bulk email sender utility with markdown template and multi-language support.
 
-Initially created for sending recruitment follow-up emails for [BITPoliTO](https://github.com/BITPoliTO) team, can be easily modified to fit your needs. 
+Initially created for sending recruitment follow-up emails for [BIT PoliTO](https://github.com/BITPoliTO) team, can be easily modified to fit your needs. 
 
 ## Installation
 Python 3 is required
@@ -12,7 +12,7 @@ $ python -m pip install -r requirements.txt
 
 ## Setup
 The following files should be set up:
-- File `export.csv` should contain `name`, `email` and `language` as first three columns
+- File `export.csv` should contain the columns `name`, `email` and `language`
 - File `configuration.json` should be set up with your SMTP server's configuration as well as with the subject of the emails you'd like to send
 - File `template_en.md` should contain your *english* email template in valid markdown format
 - File `template_it.md` should contain your *italian* email template in valid markdown format
@@ -35,8 +35,8 @@ Using this method the program will run with some default parameters:
 ### Method 2: Import script
 **EmailBlaster** can be imported in your Python script and used in the following way
 ```python
-from MailBlaster import MailBlaster
-my_sender = MailBlaster('configuration.json', 'test.csv',
+from EmailBlaster import EmailBlaster
+my_sender = EmailBlaster('configuration.json', 'test.csv',
                 'template_en.md', 'template_it.md')
 my_sender.send()
 ```  

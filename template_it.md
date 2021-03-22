@@ -1,11 +1,18 @@
 <p align="center">
-  <img width="20%" height="20%" src="https://i.imgur.com/Foy1Spx.png" />
+  <img width="250px" height="250px" src="https://i.imgur.com/BDQkPNn.png" />
 </p>
 
-Recruitment Test
-================
+# Ciao {{ first_name }} 👋
 
-Hello {{ first_name }} 👋,
+Abbiamo visionato la tua candidatura e vorremmo conoscerti un po' meglio.
 
-This is a test email just for you,  
-sincerely BITPoliTO Team
+Clicca [qui](https://calendly.com/bitpolito/recruitment) per prenotare una breve video call con il team.  
+
+Se il bottone non dovesse funzionare ricopia il seguente link nel tuo browser:  
+`https://calendly.com/bitpolito/recruitment`
+
+⚠ Conserva questa email, la call avverrà nell'orario prenotato al seguente link: https://meet.jit.si/BITPoliTO_recruitment
+
+
+A presto! 😄  
+**BIT PoliTO Team**
