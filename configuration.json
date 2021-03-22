@@ -1,0 +1,11 @@
+{
+  "display_name": "BITPoliTO Team",
+  "username": "bit@polito.it",
+  "password": "",
+  "server": "mail.polito.it",
+  "port": 465,
+  "template": {
+    "subject_en": "BITPoliTO Team Recruiting",
+    "subject_it": "Reclutamento Team BITPoliTO"
+  }
+}
