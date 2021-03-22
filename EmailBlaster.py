@@ -37,7 +37,8 @@ class EmailBlaster():
             for r in csv.DictReader(f):
                 if self.verbose:
                     print(f'Sending email to {r["email"]}')
-
+                
+                # Get correct template and render
                 if r['language'] == 'English':
                     chosen_s = self.config['template']['subject_en']
                     chosen_t = self.template_en
@@ -56,12 +57,13 @@ class EmailBlaster():
                 msg['Subject'] = chosen_s
                 msg['From'] = formataddr((self.config['display_name'], self.config['username']))
                 msg['To'] = r['email']
-
+                
+                # Send Email
                 server.sendmail(self.config['username'], [r['email']], msg.as_string())
                 time.sleep(1)
             server.close()
 
 
 if __name__ == '__main__':
-    EmailBlaster('configuration.json', 'test.csv',
-                'template_en.md', 'template_it.md').send()
+    EmailBlaster('configuration.json', 'export.csv',
+                'template_en.md', 'template_it.md', verbose=True).send()
